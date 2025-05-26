@@ -1,0 +1,22 @@
+name: ArdaXpBottles
+version: 2.0
+main: de.ardania.urutar.ardaxpbottles.ArdaXpBottles
+api-version: 1.21.4
+author: Urutar
+description: Adds commands to bottle experience
+
+commands:
+  bottle:
+    description: Help Page
+    aliases: [b, xpbottle, xpb]
+permissions:
+  ardaxpbottles.help:
+    default: op
+  ardaxpbottles.check:
+    default: op
+  ardaxpbottles.check.other:
+    default: op
+  ardaxpbottles.create:
+    default: op
+  ardaxpbottles.set:
+    default: op
