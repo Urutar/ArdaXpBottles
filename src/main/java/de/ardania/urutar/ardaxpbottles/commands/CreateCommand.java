@@ -75,7 +75,7 @@ public class CreateCommand {
         String message = MESSAGEHANDLER.playerCreateMessage
                 .replace("[Exp]", Long.toString(totalXpCost))
                 .replace("[BottleAmount]", Long.toString(desiredAmount))
-                .replace("[Cost", Long.toString(totalMoneyCost));
+                .replace("[Cost]", Long.toString(totalMoneyCost));
 
         while (totalXpCost >= Integer.MAX_VALUE){
             player.giveExp(-Integer.MAX_VALUE);

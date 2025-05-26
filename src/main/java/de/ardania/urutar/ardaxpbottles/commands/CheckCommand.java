@@ -34,7 +34,7 @@ public class CheckCommand {
             String message = MESSAGEHANDLER.playerCheckMessage
                     .replace("[Exp]", Long.toString(playerExp))
                     .replace("[BottleAmount]", Long.toString(maxAmount))
-                    .replace("[Cost", Long.toString(maxCost));
+                    .replace("[Cost]", Long.toString(maxCost));
 
             MESSAGEHANDLER.showMessage(player, message);
             return true;
@@ -63,7 +63,7 @@ public class CheckCommand {
                 .replace("[PlayerName]", playerName)
                 .replace("[Exp]", Long.toString(playerExp))
                 .replace("[BottleAmount]", Long.toString(maxAmount))
-                .replace("[Cost", Long.toString(maxCost));
+                .replace("[Cost]", Long.toString(maxCost));
 
         MESSAGEHANDLER.showMessage(player, message);
         return true;
