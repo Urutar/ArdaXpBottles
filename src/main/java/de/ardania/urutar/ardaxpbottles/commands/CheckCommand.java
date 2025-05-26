@@ -27,10 +27,6 @@ public class CheckCommand {
             long playerExp = XpCalc.getPlayerExp(player);
             int expCost = CONFIGHANDLER.getExperienceCost();
             int moneyCost = CONFIGHANDLER.getEuronenCost();
-            if (playerExp < expCost) {
-                MESSAGEHANDLER.showMessage(player, MESSAGEHANDLER.noXpError);
-                return false;
-            }
 
             long maxAmount = (int)playerExp / expCost;
             long maxCost = moneyCost * maxAmount;
@@ -60,11 +56,6 @@ public class CheckCommand {
         long playerExp = XpCalc.getPlayerExp(other);
         int expCost = CONFIGHANDLER.getExperienceCost();
         int moneyCost = CONFIGHANDLER.getEuronenCost();
-        if (playerExp < expCost) {
-            MESSAGEHANDLER.showMessage(player, MESSAGEHANDLER.noMoneyError);
-            return false;
-        }
-
         long maxAmount = (int)playerExp / expCost;
         long maxCost = moneyCost * maxAmount;
 
